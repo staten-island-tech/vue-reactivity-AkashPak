@@ -1,8 +1,8 @@
 <template>
   <div> 
-    <DestCard
-    v-for="destination in destinations" 
-    :key="destination.name"
+    <PusheenCat
+    v-for="pusheenthecatthriftshop in stored" 
+    :key="stored.name"
     :Destination="destination"
   />
  </div>
@@ -60,6 +60,45 @@ const pusheenthecatthriftshop= [
     Type: "Normal",
     img:"https://i.pinimg.com/736x/5a/4f/18/5a4f181aa0396d2e44b20ee1f3364bc1.jpg",
   },
+  {
+    name:"FancyPusheen",
+    Type: "Normal",
+    img:"https://i5.walmartimages.com/asr/314d123a-321c-4366-ab27-2ebcad7cdd84_1.34a987f055ba93807aef551077e7ced6.jpeg",
+  },
+  {
+    name:"DetectivePusheen",
+    Type: "Normal",
+    img:"https://th.bing.com/th/id/OIP.NqLGjMeB7qMujvOL_d7nOAHaHa?rs=1&pid=ImgDetMain",
+  },
+  {
+    name:"PterodactylPusheen",
+    Type: "Dinosaur",
+    img:"https://i5.walmartimages.com/asr/aff24023-54c4-4983-a16c-8137cc15f9d9.ca8183f8fe724798a1a6fee9acd57bf5.jpeg",
+  },
+  {
+    name:"LochnessPusheen",
+    Type: "Water",
+    img:"https://i.pinimg.com/736x/0e/2b/59/0e2b59adc126186bf4bda32be66ec232.jpg",
+  },
+  {
+    name:"NarwhalPusheen",
+    Type: "Water",
+    img:"https://cdn11.bigcommerce.com/s-0kvv9/images/stencil/1920w/products/263156/366956/pushnarwhal13__51664.1528912194.jpg?c=2",
+  },
+  {
+    name:"TrexPusheen",
+    Type: "Dinosaur",
+    img:"https://i.pinimg.com/originals/e9/6d/5a/e96d5a19114a6bbab9c873fad69b0332.png",
+  },
+  {
+    name:"SealPusheen",
+    Type: "Water",
+    img:"https://www.artbox.co.uk/images/Pusheen_Plush_Seal_1_400.jpg",
+  },
+
+ 
+  
+
   
 
 

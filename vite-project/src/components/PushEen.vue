@@ -1,6 +1,6 @@
 <template>
  <div>
-<h1>{{
+<h1>{{pusheen.name}}</h1>
 
 
 

@@ -1,9 +1,9 @@
 <template> 
 <div>
 <PushEen
-v-for="monke in pusheenthecatthriftshop"
-:key = "monke.name"
-:Ape ="monke"
+   v-for="pusheen in pusheenthecatthriftshop"
+  :key = "pusheenthecatthriftshop.name"
+:Push ="pusheen"
 />
 </div>
 </template>
@@ -94,6 +94,6 @@ const pusheenthecatthriftshop= [
     name:"SealPusheen",
     Type: "Water",
     img:"https://www.artbox.co.uk/images/Pusheen_Plush_Seal_1_400.jpg",
-  },
+  },]
 </script>
 

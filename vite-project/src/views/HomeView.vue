@@ -1,14 +1,17 @@
 <template> 
 <div>
 <PushEen
-   v-for="pusheen in pusheenthecatthriftshop"
-  :key = "pusheenthecatthriftshop.name"
-:Push ="pusheen"
+v-for="cat in pusheenthecatthriftshop"
+:key= "cat.name"
+:push="cat"
+@addtocart="Additems(cat)"
 />
 </div>
 </template>
 
 <script setup> 
+import PushEen from '@/components/icons/PushEen.vue';
+import PusheenCart from '@/components/PusheenCart.vue';
 const pusheenthecatthriftshop= [
   {
     name: "MerPusheen",

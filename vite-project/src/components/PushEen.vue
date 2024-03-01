@@ -1,14 +1,20 @@
 <template>
  <div>
-<h1>{{pusheen.name}}</h1>
-
-
-
-
+<h1>{{ push.name }} </h1>
+<img :src="push.img" alt=""/>
+<button type="menu"></button>
  </div>
+
 </template>
 
+<script setup>
+const props = defineProps({
+  push: Object
+});
+</script>
+
 <style scoped>
+
 .item {
   margin-top: 2rem;
   display: flex;

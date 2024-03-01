@@ -10,13 +10,14 @@ v-for="cat in pusheenthecatthriftshop"
 </template>
 
 <script setup> 
-import PushEen from '@/components/icons/PushEen.vue';
+import PushEen from '@/components/PushEen.vue';
 import PusheenCart from '@/components/PusheenCart.vue';
+
 const pusheenthecatthriftshop= [
   {
     name: "MerPusheen",
     Type: "Water",
-    img: "https://m.media-amazon.com/images/I/71LfBMvMLQL.__AC_SX300_SY300_QL70_FMwebp_.jpg"
+    img: "https://cdn.shopify.com/s/files/1/0057/8182/products/mini-mermaid-pink.png?v=1499985441"
   },
   {
     name:"CinnPusheen",

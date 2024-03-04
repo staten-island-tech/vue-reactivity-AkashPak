@@ -1,10 +1,9 @@
 <template>
  <div>
 <h1>{{ push.name }} </h1>
-<img class="image" :src="push.img" alt="" />
-<button type="menu"></button>
+<img :src="push.img" alt=""/>
+<button @click=""></button>
  </div>
-
 
 </template>
 
@@ -21,12 +20,6 @@ const props = defineProps({
   display: flex;
   position: relative;
 }
-
-.image{
-height: 50%;
-width: 80%
-}
-
 
 .details {
   flex: 1;

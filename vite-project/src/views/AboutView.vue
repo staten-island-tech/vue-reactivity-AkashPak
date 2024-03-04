@@ -1,8 +1,20 @@
+
+import PusheenCart from '@/components/PusheenCart.vue';
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+ <PusheenCart
+
+ 
+ 
+ 
+ />
+<div class="about">
   </div>
-</template>
+  </template>
+
+  <script setup>
+const cart=[]
+
+</script>
 
 <style>
 @media (min-width: 1024px) {

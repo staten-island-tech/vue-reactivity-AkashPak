@@ -2,19 +2,21 @@
  <div>
 <h1>{{ push.name }} </h1>
 <img :src="push.img" alt=""/>
-<button @click="addtocart">Add to Kitty Kart</button>
+<!-- <button @click="addtocart(push)">Add to Kitty Kart</button> -->
  </div>
 
 </template>
 
-<script setup>
+<!-- <script setup>
+import { defineEmits } from 'vue';
+
 const props = defineProps({
   push: Object
 });
 const addtocart= send('addtocart', props.push); /// takes argument of add to cart and applies props.push
 const send= defineEmits(['addtocart']); // defines argument
 
-</script>
+</script> -->
 
 
 <style scoped>

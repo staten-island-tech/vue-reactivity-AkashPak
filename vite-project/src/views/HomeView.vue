@@ -1,17 +1,21 @@
 <template> 
 <div>
+<div>
 <PushEen
 v-for="cat in pusheenthecatthriftshop"
 :key= "cat.name"
 :push="cat"
-@addtocart="Additems(cat)"
+@addtocart="Additem"
 />
+</div>
+<PusheenCart :cartItems="cartitems"/>
 </div>
 </template>
 
 <script setup> 
 import PushEen from '@/components/PushEen.vue';
 import PusheenCart from '@/components/PusheenCart.vue';
+
 
 const pusheenthecatthriftshop= [
   {
@@ -98,6 +102,12 @@ const pusheenthecatthriftshop= [
     name:"SealPusheen",
     Type: "Water",
     img:"https://www.artbox.co.uk/images/Pusheen_Plush_Seal_1_400.jpg",
-  },]
+  },];
+  const cartItems=ref([])
+  addtocart= (item) =>{
+    cartItems.values.push(item);
+  }
+
 </script>
+
 

@@ -2,7 +2,7 @@
  <div>
 <h1>{{ push.name }} </h1>
 <img :src="push.img" alt=""/>
-<button @click=""></button>
+<button @click="emit('addtocart')">Add to Kitty Kart</button>
  </div>
 
 </template>

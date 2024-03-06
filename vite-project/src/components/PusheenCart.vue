@@ -1,15 +1,12 @@
+
 <script setup>
-defineProps({
-  msg: {
-    type: String,
-    required: true
-  }
-})
-</script>
-<script setup>
+const props=  defineEmits
 
 
 </script>
+
+
+
 
 <template>
   <div class="greetings">

@@ -2,7 +2,7 @@
  <div>
 <h1>{{ push.name }} </h1>
 <img :src="push.img" alt=""/>
-<button @click="emit('addtocart')">Add to Kitty Kart</button>
+<button @click="addtocart">Add to Kitty Kart</button>
  </div>
 
 </template>
@@ -11,7 +11,11 @@
 const props = defineProps({
   push: Object
 });
+const addtocart= send('addtocart', props.push); /// takes argument of add to cart and applies props.push
+const send= defineEmits(['addtocart']); // defines argument
+
 </script>
+
 
 <style scoped>
 

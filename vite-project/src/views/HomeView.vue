@@ -12,7 +12,7 @@
     <h3 class="text" >Cart</h3>
     <div v-for='(kit, index) in cart' :key=index>
       <img :src = "kit.img" alt="" width="10" height="10">
-      <h4>  {{ kit.name }}    </h4>
+      <h4>  {{  kit.name }}    </h4>
     </div>
   
   
